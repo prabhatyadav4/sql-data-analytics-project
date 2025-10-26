@@ -103,23 +103,28 @@ This dual-path approach ensures you first **understand your data** thoroughly be
 sql-data-analytics-project/
 │
 ├── scripts/
-│   ├── 00_init_database.sql              # Database initialization and setup
-│   ├── 01_database_exploration.sql       # Schema and metadata analysis
+│   │
+│   ├── 00_init_database.sql              # Database setup (shared)
+│   │
+│   ├── ─────── PHASE 1: EDA ───────
+│   ├── 01_database_exploration.sql       # Schema & metadata analysis
 │   ├── 02_dimensions_exploration.sql     # Dimension table profiling
 │   ├── 03_date_range_exploration.sql     # Temporal data boundaries
-│   ├── 04_measures_exploration.sql       # Metric identification and stats
+│   ├── 04_measures_exploration.sql       # Key metrics identification
 │   ├── 05_magnitude_exploration.sql      # Value distribution analysis
 │   ├── 06_ranking_exploration.sql        # Top-N and ranking queries
-│   ├── 07_change_over_time_analysis.sql  # Trend and growth analysis
-│   ├── 08_cumulative_analysis.sql        # Running totals and aggregates
-│   ├── 09_performance_analysis.sql       # KPI and performance metrics
-│   ├── 10_part_to_whole_analysis.sql     # Contribution and composition
-│   ├── 11_segmentation_analysis.sql      # Cohort and segment analysis
+│   │
+│   ├── ─────── PHASE 2: ADA ───────
+│   ├── 07_change_over_time_analysis.sql  # Trend & growth analysis
+│   ├── 08_cumulative_analysis.sql        # Running totals & aggregates
+│   ├── 09_performance_analysis.sql       # KPI & performance metrics
+│   ├── 10_part_to_whole_analysis.sql     # Contribution analysis
+│   ├── 11_segmentation_analysis.sql      # Cohort & segment analysis
 │   ├── 12_report_customers.sql           # Customer analytics report
 │   └── 13_report_products.sql            # Product analytics report
 │
-├── LICENSE                                # MIT License
-└── README.md                              # This file
+├── LICENSE
+└── README.md
 ```
 
 ---
